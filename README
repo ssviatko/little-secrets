@@ -1,0 +1,21 @@
+LITTLE SECRETS
+By Stephen Sviatko
+
+A simple short message encryption system that uses the cryptography features of the SS2X library.
+
+usage:
+
+encodels <passphrase> <message>
+Responds with secret message.
+
+decodels <passphrase> <secret>
+Responds with original message.
+
+--- Actual Example:
+
+ssviatko@icosahedron:~/c/little-secrets$ ./encodels "Stephen Sviatko" "Hello there"
+g7wu0NQZEg70ey1Jbej8hmPzC797DKYePz4pr2bshPAoSRNgJ4koTZAVaHDekcHB
+
+ssviatko@icosahedron:~/c/little-secrets$ ./decodels "Stephen Sviatko" "g7wu0NQZEg70ey1Jbej8hmPzC797DKYePz4pr2bshPAoSRNgJ4koTZAVaHDekcHB"
+Hello there
+
